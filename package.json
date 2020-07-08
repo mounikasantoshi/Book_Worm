@@ -58,5 +58,6 @@
   "main": "index.js",
   "repository": "https://github.com/mounikasantoshi/Book_Worm.git",
   "author": "mounika <mounikasantoshi99@gail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "proxy": "http://localhost:8080"
 }

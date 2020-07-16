@@ -83,7 +83,7 @@ class BookForm extends React.Component {
     return (
       <Segment>
         <Form onSubmit={this.onSubmit} loading={loading}>
-          <Grid columns={2}>
+          <Grid columns={2} stackable>
             <Grid.Row>
               <Grid.Column>
                 <Form.Field error={!!errors.title}>
@@ -151,7 +151,7 @@ BookForm.propTypes = {
     title: PropTypes.string.isRequired,
     authors: PropTypes.string.isRequired,
     covers: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-    pages: PropTypes.number.isRequired,
+    pages: PropTypes.number,
   }).isRequired,
 };
 
